@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 4</title>
+</head>
+<body>
+    <h1>Addition of Two numbers</h1>
+    <br>
+    Enter First Number : <input type="number" id="firstNum">
+    <br><br>
+    Enter Second Number: <input type="number" id="secondNum">
+    <br><br>
+   <button onclick="addition()">Add</button> : <input type="number" id="add">
+
+   <script>
+       function addition()
+       {
+            let first = document.getElementById("firstNum").value;
+            let second = document.getElementById("secondNum").value;
+
+            let add = parseInt(first) + parseInt(second);
+            document.getElementById("add").value = add;
+       }
+   </script>
+</body>
+</html>
